@@ -1,0 +1,8 @@
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\bin\Debug\LabBasedAssignment6.exe.config
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\bin\Debug\LabBasedAssignment6.exe
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\bin\Debug\LabBasedAssignment6.pdb
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\obj\Debug\LabBasedAssignment6.csproj.AssemblyReference.cache
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\obj\Debug\LabBasedAssignment6.csproj.SuggestedBindingRedirects.cache
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\obj\Debug\LabBasedAssignment6.csproj.CoreCompileInputs.cache
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\obj\Debug\LabBasedAssignment6.exe
+D:\Nordic\C#\LBA6\LBA6\LabBasedAssignment6\obj\Debug\LabBasedAssignment6.pdb
