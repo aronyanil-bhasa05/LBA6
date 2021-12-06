@@ -7,10 +7,25 @@ namespace LabBasedAssignment6
     {
         static void Main()
         {
-            factorial facto= new factorial();
-            Console.Write("ENTER A NUMBER = ");
-            double n = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"FACTORIAL OF {n} IS {facto.fact(n)} ");
+            try
+            {
+                factorial facto = new factorial();
+                Console.Write("ENTER A NUMBER = ");
+                double n = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"FACTORIAL OF {n} IS {facto.fact(n)} ");
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }           
             Console.ReadLine();
         }
 

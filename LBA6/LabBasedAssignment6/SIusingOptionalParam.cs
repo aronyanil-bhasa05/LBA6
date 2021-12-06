@@ -2,13 +2,13 @@
 
 namespace LabBasedAssignment6
 {
-    class SIusingOutParameter
+    class SIusingOptionalParam
     {
         static void Main()
         {
             try
             {
-                SIusingOutParameter ob = new SIusingOutParameter();
+                SIusingOptionalParam ob = new SIusingOptionalParam();
                 Console.Write("ENTER PRINCIPAL = ");
                 double p = Convert.ToDouble(Console.ReadLine());
                 Console.Write("ENTER RATE = ");
@@ -16,7 +16,7 @@ namespace LabBasedAssignment6
                 Console.Write("ENTER TIME = ");
                 int t = Convert.ToInt32(Console.ReadLine());
                 double amt = 0;
-                Console.WriteLine($"SIMPLE INTEREST IS {ob.calc(p, r, t, out amt)} AND FINAL AMOUNT IS {amt} ");
+                Console.WriteLine($"SIMPLE INTEREST IS {ob.calc(p, t, out amt,rate: r)} AND FINAL AMOUNT IS {amt} ");
             }
             catch (FormatException ex)
             {
@@ -34,7 +34,7 @@ namespace LabBasedAssignment6
             Console.ReadLine();
         }
 
-        double calc(double pr, double rate, int time, out double amt)
+        double calc(double pr, int time, out double amt, double rate = 10)
         {
             double SI = (pr * rate * time) / 100;
             amt = pr + SI;
@@ -43,3 +43,4 @@ namespace LabBasedAssignment6
         }
     }
 }
+

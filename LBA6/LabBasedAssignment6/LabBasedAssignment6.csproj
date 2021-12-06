@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LabBasedAssignment6.SIusingOutParameter</StartupObject>
+    <StartupObject>LabBasedAssignment6.SIusingOptionalParam</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="factorial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SIusingOptionalParam.cs" />
     <Compile Include="SIusingOutParameter.cs" />
   </ItemGroup>
   <ItemGroup>
