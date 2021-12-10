@@ -15,13 +15,13 @@ namespace LabBasedAssignment6
             this.ProCode = proCode;
             this.ProName = proName;
 
-            if (this.ProCode <= 100 && this.ProCode >= 500)
+            if (this.ProCode >= 100 && this.ProCode <= 500)
             {
-                throw new InvalidProCode();
+                Console.WriteLine($"Code={this.ProCode}\tName={this.ProName}");
             }
             else
             {
-                Console.WriteLine($"Code={this.ProCode}\tName={this.ProName}");
+                throw new InvalidProCode();
             }
         }
     }
@@ -34,7 +34,7 @@ namespace LabBasedAssignment6
         }
     }
 
-    class TestProCode : product
+    class TestProCode
     {
         static void Main()
         {
@@ -44,9 +44,8 @@ namespace LabBasedAssignment6
                 int pc = Convert.ToInt32(Console.ReadLine());
                 Console.Write("ENTER PRODUCT NAME = ");
                 string pn = Console.ReadLine();
-                TestProCode ob = new TestProCode();
+                product ob = new product();
                 ob.ValidateProCode(pc, pn);
-
             }catch (InvalidProCode ex)
             {
                 Console.WriteLine(ex.Message);
